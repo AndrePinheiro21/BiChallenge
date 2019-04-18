@@ -1,0 +1,295 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4a69cda6-270a-453f-9c35-7cd83fa81a99" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CuboChallengeTarifacao</ID>
+  <Name>CuboChallengeTarifacao</Name>
+  <CreatedTimestamp>0001-01-01T02:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T02:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T02:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="8e28db41-af79-42ef-9f22-797257bb0dd3">
+      <ID>Fato Challenge</ID>
+      <Name>Fato Challenge</Name>
+      <DimensionID>Fato Challenge</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5777404c-8a18-4d9d-8188-7fc8c1562134">
+          <AttributeID>ID Assinatura</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3cb5d54f-9c4c-407e-bcd1-ab33939063db">
+          <AttributeID>Dt Ativacao Dim</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ec21404-5e3d-45dc-bde6-5adb4db02536">
+      <ID>Base Ativos Naotarifados</ID>
+      <Name>Base Ativos Naotarifados</Name>
+      <DimensionID>Base Ativos Naotarifados</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="57f6180d-1e2e-4994-b2d3-bd3069225adc">
+          <AttributeID>ID Assinatura</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9865001e-2dad-4b6b-bcd9-e5f729285e8a">
+      <ID>Dim Indicadores</ID>
+      <Name>Dim Indicadores</Name>
+      <DimensionID>Dim Indicadores</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f6c8182c-ac72-4160-a3d6-768e658a834d">
+          <AttributeID>Id Assinatura</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ad7a82eb-427e-4a1b-a3b5-a82a7f00e783">
+      <ID>Dim Tempo</ID>
+      <Name>Dim Tempo</Name>
+      <DimensionID>Dim Tempo</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="77d8a64a-7f6b-4009-839d-c2666d868d08">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <CubePermissions>
+    <CubePermission dwd:design-time-name="70b7cee2-08b4-4dbd-a497-978d278b59b6">
+      <ID>CubePermission</ID>
+      <Name>CubePermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+      <Write>Allowed</Write>
+      <ReadSourceData>None</ReadSourceData>
+    </CubePermission>
+  </CubePermissions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="ba0e7f17-6e6a-4da2-834e-f05c8a5d3e0f">
+      <ID>Fato Challenge</ID>
+      <Name>Fato Challenge</Name>
+      <CreatedTimestamp>0001-01-01T02:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T02:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T02:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b125aa40-4b1a-4c95-b5e5-2c2baf6eef74">
+          <ID>ID Produto</ID>
+          <Name>ID Produto</Name>
+          <Source dwd:design-time-name="d902ec2a-cf5b-423a-91b2-679dcecf36a5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="00dfcd84-8953-478f-8237-0f797afc8f5e">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>ID_Produto</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7d63b50f-0a68-4210-95c8-2a72f96ac673">
+          <ID>ID Assinatura Principal</ID>
+          <Name>ID Assinatura Principal</Name>
+          <Source dwd:design-time-name="bba97749-237c-4ecf-8ad5-892d652641bc">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4fb5ec8a-c0ef-4484-933f-fa33191a0937">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>IDAssinaturaPrincipal</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6d3ec5c3-2cd2-4208-9036-3e30dcc0f278">
+          <ID>Step Tarifacao Principal</ID>
+          <Name>Step Tarifacao Principal</Name>
+          <Source dwd:design-time-name="2184c039-5418-4803-9e15-45ce56c8ed48">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="617ebcc1-77c0-467c-9729-e72b3186bfec">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>StepTarifacaoPrincipal</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0cd466ec-c0f8-4ed7-8723-81fa04985865">
+          <ID>Valor</ID>
+          <Name>Valor</Name>
+          <Source dwd:design-time-name="178d75c8-06a3-447f-bb58-732405dc0c96">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ecce70f2-0728-4ed6-b4c5-bc341f632c63">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>valor</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dc1ed011-6119-4cdf-a4ef-ce4585328ef5">
+          <ID>Step Tarifacao</ID>
+          <Name>Step Tarifacao</Name>
+          <Source dwd:design-time-name="73d9e6b9-8bd6-48e1-b5dc-7edcf4f1b0ec">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="43555617-1ee1-440e-b606-b02378dfeb38">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>Step_Tarifacao</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b17691f4-d7e6-4ccb-9411-e7d3900890d4">
+          <ID>Valor Step</ID>
+          <Name>Valor Step</Name>
+          <Source dwd:design-time-name="3e7c5acb-6c02-4eba-a369-8a3d070aa0ab">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="93e3b55b-93d5-4d34-a82d-b71cd0b9ab29">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>Valor_Step</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="034a29aa-6252-4ff7-be98-3cd6c5829375">
+          <ID>Qtde Calc Churn TO</ID>
+          <Name>Qtde Calc Churn TO</Name>
+          <Source dwd:design-time-name="e38fca07-8c9c-4a47-921e-de40f7fa6ec0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="78b45559-6832-402e-b715-c9ebb5bd6e72">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>QtdeCalcChurnTO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f3a53f0c-4594-4822-84b3-38181e6c4582">
+          <ID>Qtde Assinatura Dim</ID>
+          <Name>Qtde Assinatura Dim</Name>
+          <Source dwd:design-time-name="41c9426b-c558-4881-b363-6ea7f29d52dd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a3d250c-96fb-4670-b45a-ca5b31b78930">
+              <TableID>dbo_FatoChallenge</TableID>
+              <ColumnID>QtdeAssinaturaDim</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="09c9f94e-1df5-40d3-b080-3ec51fc6dce9">
+          <ID>Contagem Fato Challenge</ID>
+          <Name>Contagem Fato Challenge</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6375c807-a262-446b-8531-12199c2cb292">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9895287b-a9bf-4d41-b819-73be10477736">
+              <TableID>dbo_FatoChallenge</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="94bca66a-932a-4239-b36f-c015c3dc8605">
+          <CubeDimensionID>Fato Challenge</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc2bc0fd-0a5e-4c70-819b-3445be82b1f1">
+              <AttributeID>ID Assinatura</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="72280ea9-4337-44ce-b212-325d3045a62e">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="08e3b9e7-17e2-4bbf-9109-622e2ad95583">
+                    <TableID>dbo_FatoChallenge</TableID>
+                    <ColumnID>ID_Assinatura</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6b07f483-94b8-4432-84fb-431b18821ec6">
+          <CubeDimensionID>Dim Indicadores</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b6c6a94a-5a55-4c07-a719-0e4e84f76cab">
+              <AttributeID>Id Assinatura</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f06832d5-6571-4935-8dff-9e89c98fc6d8">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba59831b-ff76-4ff9-a6ad-1d9a53cd3d66">
+                    <TableID>dbo_FatoChallenge</TableID>
+                    <ColumnID>ID_Assinatura</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4faa5a7a-4008-4792-982a-913f7f1c3e5f">
+          <CubeDimensionID>Base Ativos Naotarifados</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4408126e-d8ec-4239-ad3a-5a5bbb3ce672">
+              <AttributeID>ID Assinatura</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ec5e067d-e12d-4c6f-b6f6-a08bb0181c5d">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc8791f1-e235-4b8a-8bde-bbbd794bf971">
+                    <TableID>dbo_FatoChallenge</TableID>
+                    <ColumnID>ID_Assinatura</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="12b85d8e-7f88-4fdb-a36b-2390a9f16f0d">
+          <CubeDimensionID>Dim Tempo</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="db838afe-d426-438d-b6b5-6069837b971c">
+              <AttributeID>Data</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="928ab866-34b9-461d-b480-e08669b337d8">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09228867-ccc8-465d-9381-384af0c105b5">
+                    <TableID>dbo_FatoChallenge</TableID>
+                    <ColumnID>DtAtivacaoDim</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="32358480-d191-4d02-b23e-04d5b9c45904">
+    <DataSourceViewID>DSV_Cubo_Challenge</DataSourceViewID>
+  </Source>
+</Cube>
